@@ -148,7 +148,7 @@ export const config: PersonalConfig = {
     {
       id: "monease",
       title: "Monease.io",
-      description: "A versatile money and crypto exchange platform available as a Private-label PaaS. Built with Remix on the frontend and Bun/Elysia.js on the backend, utilizing Prisma ORM with PostgreSQL, BullMQ for background jobs, and containerized with Docker for Kubernetes deployments",
+      description: "A versatile money and crypto exchange platform available as a Private-label PaaS, developed by a team of three developers. Built with Remix on the frontend and Bun/Elysia.js on the backend, utilizing Prisma ORM with PostgreSQL, BullMQ for background jobs, and containerized with Docker for Kubernetes deployments",
       url: "https://monease.io",
     },
     {
