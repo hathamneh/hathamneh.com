@@ -10,11 +10,11 @@ export const SkillsAndLanguagesSection = () => {
     <Section id="skills-and-languages" contentClassName="text-center">
       <h4 className="text-primary text-xl font-bold mb-2">Skills & Languages</h4>
       <h2 className="text-3xl font-bold mb-4">My Tech Stack</h2>
-      <div className="flex w-full gap-8">
+      <div className="flex flex-col xl:flex-row w-full gap-8">
         <div className="py-6 px-9 flex flex-col gap-4 flex-1">
           <SkillsList skills={config.skills} variant="outline" itemClassName="text-base" />
         </div>
-        <div className="w-[400px] py-4 px-6 flex flex-col gap-4 items-start border-s border-gray-100">
+        <div className="xl:w-[400px] py-4 px-6 flex flex-col gap-4 items-start xl:border-s border-gray-100">
           {config.languages?.map((language) => (
             <div key={language.name} className="flex items-center gap-2 w-full text-start">
               <span className="font-bold w-20 shrink-0">{language.name}</span>

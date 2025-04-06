@@ -8,7 +8,7 @@ import React from "react";
 
 export const Hero = () => {
   return (
-    <main className="flex flex-col gap-8 row-start-2 items-center mt-12 relative h-screen max-h-[600px] mb-16">
+    <main className="flex flex-col gap-8 row-start-2 items-center mt-12 relative xl:h-screen xl:max-h-[600px] mb-16">
       <div className="absolute inset-0 w-full h-full">
         <span className="absolute start-0">
           <svg width="48" height="95" viewBox="0 0 48 95" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,14 +16,14 @@ export const Hero = () => {
             <defs>
               <radialGradient id="paint0_radial_6:121" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.5) rotate(90) scale(95)">
                 <stop stopColor="white"></stop>
-                <stop offset="0.569" stopColor="#a8e2e3"></stop>
-                <stop offset="0.993" stopColor="#6DC5C7"></stop>
+                <stop offset="0.569" stopColor="#e8f5f5"></stop>
+                <stop offset="0.993" stopColor="#d0e8e9"></stop>
               </radialGradient>
             </defs>
           </svg>
         </span>
-        <span className="absolute end-0 bottom-0">
-          <svg width="491" height="490" viewBox="0 0 491 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span className="absolute end-0 bottom-0 h-[400px] xl:h-[500px]">
+          <svg className="h-full" viewBox="0 0 491 490" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="356.5" cy="356.5" r="356.5" fill="url(#paint0_linear_6:37)"></circle>
             <defs>
               <linearGradient id="paint0_linear_6:37" x1="356.5" y1="0" x2="356.5" y2="713" gradientUnits="userSpaceOnUse">
@@ -34,8 +34,8 @@ export const Hero = () => {
           </svg>
         </span>
       </div>
-      <div className="flex flex-col lg:flex-row lg:items-center gap-14 lg:gap-20 max-w-screen-xl h-full px-8">
-        <div className="flex flex-col items-start gap-4 text-zinc-900 dark:text-zinc-50 flex-1">
+      <div className="relative flex flex-col lg:flex-row lg:items-center gap-14 lg:gap-20 max-w-screen-xl h-full px-8">
+        <div className="flex flex-col items-start gap-4 text-zinc-900 dark:text-zinc-50 flex-1 mt-8 xl:mt-0">
           <div>
             <p className="mb-2 font-bold text-primary">Hey there 👋 I am</p>
             <BlurFade inView>
@@ -72,10 +72,11 @@ export const Hero = () => {
           <Image
             src="/me.png"
             alt="Haitham"
-            width={600}
-            height={600}
+            width={0}
+            height={0}
+            sizes="100vw"
             priority
-            className="object-cover h-full lg:max-w-none rotate-y-30"
+            className="object-cover w-[900px] xl:w-[500px] lg:max-w-none rotate-y-30"
           />
         </BlurFade>
       </div>

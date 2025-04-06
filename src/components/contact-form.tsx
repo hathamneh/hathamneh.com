@@ -19,7 +19,7 @@ export const ContactForm = () => {
     </div>
   ) : (
     <Form className="flex flex-col gap-4 max-w-screen-lg mx-auto" action={formAction}>
-      <div className="flex gap-4 w-full">
+      <div className="flex flex-col xl:flex-row gap-4 w-full">
         <div className="flex-1">
           <Input
             name="name"
@@ -38,7 +38,7 @@ export const ContactForm = () => {
           />
         </div>
       </div>
-      <div className="flex gap-4 w-full">
+      <div className="flex flex-col xl:flex-row gap-4 w-full">
         <div className="flex-1">
           <Input
             name="email"

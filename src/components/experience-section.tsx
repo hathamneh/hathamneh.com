@@ -12,19 +12,19 @@ export const ExperienceSection = () => {
       <h2 className="text-3xl font-bold mb-12">My Resume</h2>
 
       <div className="flex flex-wrap relative py-12">
-        <div className="absolute left-1/2 top-0 w-[1px] h-full bg-primary opacity-20"></div>
+        <div className="absolute left-0 xl:left-1/2 top-0 w-[1px] h-full bg-primary opacity-20"></div>
 
         {config.experience.map((item, i) => (
           <React.Fragment
             key={item.title}
           >
-            {i % 2 === 1 && <div className="w-1/2"></div>}
+            {i % 2 === 1 && <div className="w-1/2 hidden xl:block"></div>}
             <div
-              className="border-b-2 border-b-background last:border-none w-1/2"
+              className="border-b-2 border-b-background last:border-none xl:w-1/2"
             >
               <ExperienceCard item={item} align={i % 2 === 1 ? "left" : "right"} />
             </div>
-            {i % 2 === 0 && <div className="w-1/2"></div>}
+            {i % 2 === 0 && <div className="w-1/2 hidden xl:block"></div>}
           </React.Fragment>
         ))}
       </div>

@@ -14,7 +14,7 @@ export const ProjectsSection = () => {
         Here are some of the public projects I have worked on:
       </p>
 
-      <div className="flex flex-wrap gap-10 px-10">
+      <div className="flex flex-wrap gap-10 xl:px-10">
         {config.projects?.map((project) => (
           <div key={project.id} className="flex flex-col gap-4 w-1/2 flex-1 p-8 text-start items-start rounded-xl bg-white">
             <Image src={`/projects/${project.id}.png`} alt={project.title} width={200} height={200} className="w-full rounded-lg mb-4" />

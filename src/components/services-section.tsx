@@ -12,7 +12,7 @@ export const ServicesSection = () => {
         <br />
         But I also excel in different areas
       </p>
-      <div className="flex gap-4">
+      <div className="flex flex-col xl:flex-row gap-4">
         {config.services?.map((service) => (
           <div key={service.title} className={cx("rounded-lg shadow-2xl p-8 shadow-gray-200 flex flex-col gap-6 items-center flex-1",
             "hover:bg-primary hover:text-white group transition")}>

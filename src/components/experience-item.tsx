@@ -24,10 +24,10 @@ export const ExperienceCard = ({ item, align = "left" }: Props) => {
     return `${years} yr${years > 1 ? "s" : ""} ${months} mo${months > 1 ? "s" : ""}`;
   }, [item])
   return (
-    <div className={`py-6 px-9 flex flex-col gap-2 relative ${align === "right" ? "items-end text-end" : "items-start text-start"}`}>
-      <div className={`bg-white border-4 border-primary absolute w-4 h-4 rounded-full top-8 ${align === "right" ? "-right-2" : "-left-2"}`} />
+    <div className={`py-6 px-9 flex flex-col gap-2 relative items-start text-start ${align === "right" ? "xl:items-end xl:text-end" : ""}`}>
+      <div className={`bg-white border-4 border-primary absolute w-4 h-4 rounded-full top-8 -left-2 ${align === "right" ? "xl:left-auto xl:-right-2" : ""}`} />
       <h2 className="text-2xl font-bold relative">{item.title}</h2>
-      <div className="flex items-center gap-4">
+      <div className="flex flex-wrap items-center gap-2">
         <div className="flex items-center gap-2">
           <RiBuildingLine className="size-4" />
           <strong>{item.company}</strong>

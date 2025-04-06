@@ -4,8 +4,8 @@ import { Section } from "./ui/section"
 
 export const AboutMeSection = () => {
   return (
-    <Section contentClassName="flex gap-4" className="my-10">
-      <div className="flex-1">
+    <Section contentClassName="flex flex-col xl:flex-row gap-4" className="my-10">
+      <div className="flex-1 xl:mb-0 mb-20">
         <h4 className="text-primary font-bold uppercase text-xl">About Me</h4>
         <div className="text-[36px] font-bold">
           Curious, Passionate
