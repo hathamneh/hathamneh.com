@@ -91,6 +91,7 @@ export const ContactForm = () => {
 				<Textarea
 					name="message"
 					placeholder="Message"
+					required
 					rows={4}
 					disabled={pending}
 					value={formFields?.message}
