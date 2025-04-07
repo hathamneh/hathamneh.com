@@ -16,7 +16,7 @@ export const ProjectsSection = () => {
 				Here are some of the public projects I have worked on:
 			</p>
 
-			<div className="grid grid-cols-2 gap-10 xl:px-10">
+			<div className="grid grid-cols-1 xl:grid-cols-2 gap-10 xl:px-10">
 				{config.projects?.map((project) => (
 					<div
 						key={project.id}
@@ -28,7 +28,7 @@ export const ProjectsSection = () => {
 								alt={project.title}
 								width={400}
 								height={400}
-								className="w-full rounded-lg mb-4 h-[280px] object-cover object-top"
+								className="w-full rounded-lg mb-4 xl:h-[280px] object-cover object-top"
 							/>
 						)}
 						<h3 className="text-xl font-bold">{project.title}</h3>
