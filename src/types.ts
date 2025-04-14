@@ -14,14 +14,7 @@ export interface ExperienceItem {
 	skills?: SkillItem[];
 }
 
-export interface EducationItem {
-	major: string;
-	degree: string;
-	school: string;
-	location?: string;
-	from: Dayjs;
-	to?: Dayjs;
-}
+export type EducationItem = ExperienceItem;
 
 export interface ServiceItem {
 	icon?: ReactNode;
@@ -36,6 +29,7 @@ export interface ProjectItem {
 	title: string;
 	description: string;
 	url?: string;
+	stack?: SkillItem[];
 }
 
 export interface LanguageItem {

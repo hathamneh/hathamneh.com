@@ -7,22 +7,23 @@ import { ServicesSection } from "@/components/services-section";
 import { ProjectsSection } from "@/components/projects-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
+import { Topbar } from "@/components/topbar";
 
 export default function Home() {
-  return (
-    <div>
-      {/* <Topbar /> */}
-      <Hero />
-      <AboutMeSection />
-      <SectionDivider />
-      <ServicesSection />
-      <ProjectsSection />
-      <ExperienceSection />
-      <SectionDivider />
-      <SkillsAndLanguagesSection />
-      <SectionDivider />
-      <ContactSection />
-      <Footer />
-    </div>
-  );
+	return (
+		<div>
+			<Topbar />
+			<Hero />
+			<AboutMeSection />
+			<SectionDivider />
+			<ServicesSection />
+			<ProjectsSection />
+			<ExperienceSection />
+			<SectionDivider />
+			<SkillsAndLanguagesSection />
+			<SectionDivider />
+			<ContactSection />
+			<Footer />
+		</div>
+	);
 }

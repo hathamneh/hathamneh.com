@@ -2,10 +2,16 @@ import { config } from "@/config";
 import Image from "next/image";
 import { buttonVariants } from "./ui/button";
 import { Section } from "./ui/section";
+import { SkillsList } from "./skills-list";
+import { RiArrowRightLine, RiExternalLinkLine } from "@remixicon/react";
 
 export const ProjectsSection = () => {
 	return (
-		<Section contentClassName="text-center" className="bg-gray-50 mt-12">
+		<Section
+			id="projects"
+			contentClassName="text-center"
+			className="bg-gray-50 mt-12"
+		>
 			<h4 className="text-primary text-xl font-bold mb-2 mt-8">
 				Creative Portfolio
 			</h4>
@@ -31,16 +37,28 @@ export const ProjectsSection = () => {
 								className="w-full rounded-lg mb-4 xl:h-[280px] object-cover object-top"
 							/>
 						)}
-						<h3 className="text-xl font-bold">{project.title}</h3>
+						<div className="flex gap-3 flex-col xl:flex-row justify-between w-full xl:items-center">
+							<h3 className="text-xl font-bold">{project.title}</h3>
+							<a
+								className={buttonVariants({
+									variant: "outline",
+								})}
+								href={project.url}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Visit Project <RiExternalLinkLine />
+							</a>
+						</div>
 						<p className="text-gray-400">{project.description}</p>
-						<a
-							className={buttonVariants({ variant: "ghost" })}
-							href={project.url}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							Visit Project
-						</a>
+						{project.stack && (
+							<div className="flex flex-col gap-2">
+								<h4 className="text-xs font-bold">Technologies Used:</h4>
+								<div className="flex flex-wrap gap-2">
+									<SkillsList skills={project.stack} />
+								</div>
+							</div>
+						)}
 					</div>
 				))}
 			</div>
