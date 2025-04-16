@@ -222,24 +222,6 @@ export const config: PersonalConfig = {
 			],
 		},
 		{
-			id: "wird",
-			image: "wird.png",
-			category: ["Web App"],
-			title: "Wird Contests",
-			description:
-				"Wird is a non-profitable platform which will assist teachers in creating personalized contests for their students. The public pages are built with Next.js, a React framework for building server-side rendered applications. And the web application frontend is built with create-react-app and React-Router. The backend is a python django REST API.",
-			url: "https://wird.app",
-			stack: [
-				{ name: "React", icon: <RiReactjsFill /> },
-				{ name: "Typescript", icon: <TsIcon /> },
-				"Next.js",
-				{ name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
-				"react-router",
-				{ name: "Python", icon: <PythonIcon /> },
-				"Django",
-			],
-		},
-		{
 			id: "qudsinfo",
 			image: "qudsinfo.png",
 			category: ["CMS"],
@@ -256,6 +238,24 @@ export const config: PersonalConfig = {
 				"WP Plugins",
 				"S3",
 				"AWS CloudFront",
+			],
+		},
+		{
+			id: "wird",
+			image: "wird.png",
+			category: ["Web App"],
+			title: "Wird Contests",
+			description:
+				"Wird is a non-profitable platform which will assist teachers in creating personalized contests for their students. The public pages are built with Next.js, a React framework for building server-side rendered applications. And the web application frontend is built with create-react-app and React-Router. The backend is a python django REST API.",
+			url: "https://wird.app",
+			stack: [
+				{ name: "React", icon: <RiReactjsFill /> },
+				{ name: "Typescript", icon: <TsIcon /> },
+				"Next.js",
+				{ name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
+				"react-router",
+				{ name: "Python", icon: <PythonIcon /> },
+				"Django",
 			],
 		},
 		{
