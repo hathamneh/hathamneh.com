@@ -18,12 +18,13 @@ export const Hero = () => {
 						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
 					>
+						<title>Hero Background</title>
 						<circle
 							cx="0.5"
 							cy="47.5"
 							r="47.5"
 							fill="url(#paint0_radial_6:121)"
-						></circle>
+						/>
 						<defs>
 							<radialGradient
 								id="paint0_radial_6:121"
@@ -33,9 +34,9 @@ export const Hero = () => {
 								gradientUnits="userSpaceOnUse"
 								gradientTransform="translate(0.5) rotate(90) scale(95)"
 							>
-								<stop stopColor="white"></stop>
-								<stop offset="0.569" stopColor="#e8f5f5"></stop>
-								<stop offset="0.993" stopColor="#d0e8e9"></stop>
+								<stop stopColor="white" />
+								<stop offset="0.569" stopColor="#e8f5f5" />
+								<stop offset="0.993" stopColor="#d0e8e9" />
 							</radialGradient>
 						</defs>
 					</svg>
@@ -47,12 +48,13 @@ export const Hero = () => {
 						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
 					>
+						<title>Hero BG2</title>
 						<circle
 							cx="356.5"
 							cy="356.5"
 							r="356.5"
 							fill="url(#paint0_linear_6:37)"
-						></circle>
+						/>
 						<defs>
 							<linearGradient
 								id="paint0_linear_6:37"
@@ -62,8 +64,8 @@ export const Hero = () => {
 								y2="713"
 								gradientUnits="userSpaceOnUse"
 							>
-								<stop stopColor="#6DC5C7"></stop>
-								<stop offset="1" stopColor="#4a8c8d"></stop>
+								<stop stopColor="#6DC5C7" />
+								<stop offset="1" stopColor="#4a8c8d" />
 							</linearGradient>
 						</defs>
 					</svg>

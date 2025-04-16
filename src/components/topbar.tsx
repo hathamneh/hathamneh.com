@@ -1,11 +1,10 @@
 "use client";
-import { NavThemeToggle } from "@/components/nav-theme-toggle";
 import { cn } from "@/lib/utils";
+import { RiCloseFill, RiDownloadLine, RiMenuFill } from "@remixicon/react";
 import Link from "next/link";
 import type React from "react";
-import { useEffect, useState, type ReactNode } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 import { Button, buttonVariants } from "./ui/button";
-import { RiCloseFill, RiDownloadLine, RiMenuFill } from "@remixicon/react";
 
 export const Topbar = () => {
 	const [visible, setVisible] = useState(false);
@@ -61,6 +60,7 @@ export const Topbar = () => {
 								: "invisible opacity-60 max-h-0",
 						)}
 					>
+						{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
 						<div className="p-6" onClick={() => setMobileMenuOpen(false)}>
 							<NavMenu className="flex" />
 						</div>
