@@ -29,12 +29,12 @@ export const Topbar = () => {
 	return (
 		<div
 			className={cn(
-				"top-0 w-screen fixed h-20 bg-white z-50 transition border-b border-gray-100",
+				"top-0 w-screen fixed h-20 z-50 transition duration-300 p-2 xl:px-0 xl:py-2",
 				visible ? "visible opacity-100" : "invisible opacity-0",
 			)}
 		>
-			<div className="max-w-screen-xl mx-auto flex items-center h-full">
-				<div className="px-5 xl:px-0 flex items-center w-full">
+			<div className="max-w-screen-xl mx-auto flex items-center h-full bg-white border border-gray-300 bg-opacity-70 backdrop-blur rounded-xl px-2 xl:px-8">
+				<div className="px-4 xl:px-0 flex items-center w-full">
 					<button
 						className="font-bold text-base leading-5 text-start"
 						onClick={scrollToTop}
@@ -54,7 +54,7 @@ export const Topbar = () => {
 
 					<div
 						className={cn(
-							"xl:hidden absolute top-full left-0 w-full bg-white shadow-md overflow-hidden transition-all duration-300",
+							"xl:hidden absolute top-full left-0 w-full bg-white shadow-md overflow-hidden transition-all duration-300 mt-1.5 rounded-xl border bg-opacity-95 backdrop-blur",
 							mobileMenuOpen
 								? "max-h-[600px] visible opacity-100"
 								: "invisible opacity-60 max-h-0",
@@ -91,7 +91,7 @@ const NavMenu = ({ className }: { className?: string }) => {
 	return (
 		<div
 			className={cn(
-				"ms-auto flex flex-col xl:flex-row xl:items-center gap-6 [&>.item]:text-gray-600 [&>.item:hover]:text-black [&>.item]:transition",
+				"ms-auto flex flex-col xl:flex-row xl:items-center gap-6 [&>.item]:text-gray-800 [&>.item:hover]:underline [&>.item]:transition",
 				className,
 			)}
 		>
